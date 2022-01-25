@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(64, 224, 208, 0.2)
+}
+
+.about__avatar {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: white solid 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.about__img {
+    height: 100%;
+}
+
+.button {
+    position: relative;
+    background-color: rgb(37, 17, 219);
+    z-index: 100;
+    padding: 15px;
+    display: block;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.about__info {
+    background-color: rgb(204, 212, 207, 0.10);
+    color: white;
+    padding: 1%;
+    border-radius: 10%;
+    border: white solid 5px;
+}
+
+.about {
+    z-index: 100;
+    position: relative;
+    display: flex;
+    width: 75%;
+    font-family: 'Bakbak One', cursive;
+}
+
+.section {
+    height: 100vh;
+}
+.main {
+    background-image: url(img/sochinenie-na-temu-zima.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
